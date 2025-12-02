@@ -1,10 +1,14 @@
-const API_URL = "https://yg88t6zat6.execute-api.ap-south-1.amazonaws.com/resume"; 
+const API_URL = "https://yg88t6zat6.execute-api.ap-south-1.amazonaws.com/resume";
+
 // REGISTER USER
 function register() {
     const email = document.getElementById("regEmail").value;
 
     fetch(API_URL, {
         method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify({
             action: "register",
             email: email
@@ -20,6 +24,9 @@ function login() {
 
     fetch(API_URL, {
         method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify({
             action: "login",
             email: email
@@ -37,6 +44,9 @@ function saveResume() {
 
     fetch(API_URL, {
         method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify({
             action: "saveResume",
             email: document.getElementById("loginEmail").value,
@@ -47,7 +57,7 @@ function saveResume() {
     .then(alert);
 }
 
-// DOWNLOAD (simple resume export)
+// DOWNLOAD RESUME
 function downloadPDF() {
     const name = document.getElementById("name").value;
     const skills = document.getElementById("skills").value;
