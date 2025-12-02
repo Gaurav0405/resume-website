@@ -1,4 +1,4 @@
-const API_URL = "https://m2iapchhy8.execute-api.ap-south-1.amazonaws.com/resume"; 
+const API_URL = "https://yg88t6zat6.execute-api.ap-south-1.amazonaws.com/resume"; 
 // REGISTER USER
 function register() {
     const email = document.getElementById("regEmail").value;
