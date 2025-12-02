@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder | BuildMyResumes.online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Resume Builder</h1>
+
+        <!-- LOGIN SECTION -->
+        <div class="card">
+            <h2>Login</h2>
+            <input id="loginEmail" type="email" placeholder="Email">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- REGISTER SECTION -->
+        <div class="card">
+            <h2>Register</h2>
+            <input id="regEmail" type="email" placeholder="Email">
+            <button onclick="register()">Register</button>
+        </div>
+
+        <!-- RESUME BUILDER -->
+        <div class="card">
+            <h2>Create Resume</h2>
+            <input id="name" type="text" placeholder="Your Name">
+            <input id="skills" type="text" placeholder="Skills">
+            <textarea id="about" placeholder="About You"></textarea>
+            <button onclick="saveResume()">Save Resume</button>
+        </div>
+
+        <!-- DOWNLOAD -->
+        <div class="card">
+            <h2>Download Resume</h2>
+            <button onclick="downloadPDF()">Download as PDF</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
